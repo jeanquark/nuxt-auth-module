@@ -1,0 +1,118 @@
+[
+    {
+        "_id": "5d713995b721c3bb38c1f5d0",
+        "user_id": "5d7a514b5d2c12c7449be042",
+        "name": "UBS",
+        "active": false,
+        "job_title": "Web developer",
+        "job_description": "Web app developer with knowledge of Node.js, PHP.",
+        "language": {
+            "code": "fr",
+            "name": "Français",
+            "nativeName": "français, langue française",
+            "flag": "french.png"
+        },
+        "languages": [
+            {
+                "code": "fr",
+                "name": "French",
+                "info": "Native language",
+                "value": 100
+            },
+            {
+                "code": "en",
+                "name": "English",
+                "info": "B2 passed in june 2019",
+                "value": 60
+            }
+		],
+		"education": [
+			{
+				"title": "Bachelor in Geography",
+				"city": "Geneva",
+				"country": "Switzerland",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"start_date": "October 2002",
+				"end_date": "May 2005",
+				"position": {
+					"lat": 46.194388567433904,
+					"lng": 6.139726638793946
+				},
+				"school": "University of Geneva"
+			},
+			{
+				"title": "Certificate of Webmaster",
+				"city": "Sierre",
+				"country": "Switzerland",
+				"description": "",
+				"start_date": "July 2014",
+				"end_date": "September 2015",
+				"position": {
+					"lat": 46.29265167735914,
+					"lng": 7.536095380783081
+				},
+				"school": "HES-SO"
+			}
+		]
+    },
+    {
+        "_id": "5d713a66ec8f2b88b8f830b8",
+        "user_id": "5d713a66ec8f2b88b8f830b8",
+        "name": "Crédit Suisse",
+        "active": false,
+        "job_title": "Data analyst",
+        "job_description": "Convert your data into revenues",
+        "language": {
+            "code": "en",
+            "name": "English",
+            "nativeName": "English",
+            "flag": "english.png"
+        },
+        "languages": [
+            {
+                "code": "de",
+                "name": "German",
+                "info": "Professional level",
+                "value": 80
+            },
+            {
+                "code": "en",
+                "name": "English",
+                "info": "Language of study",
+                "value": 90
+            },
+            {
+                "code": "es",
+                "name": "Spanish",
+                "info": "Native language",
+                "value": 100
+            },
+            {
+                "code": "fr",
+                "name": "French",
+                "info": "B2 passed in April 2019",
+                "value": 60
+            }
+		],
+		"education": [
+			{
+				"title": "Bachelor in Economics",
+				"city": "Bern",
+				"country": "Switzerland",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+				"start_date": "September 2006",
+				"end_date": "September 2009",
+				"school": "University of Bern"
+			},
+			{
+				"title": "Master in Economics",
+				"city": "Bern",
+				"country": "Switzerland",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+				"start_date": "09-2009",
+				"end_date": "06-2012",
+				"school": "University of Bern"
+			}
+		]
+    }
+]

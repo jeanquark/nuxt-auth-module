@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "5d7a514b5d2c12c7449be042",
+		"firstname": "John",
+		"lastname": "Doe",
+		"email": "john.doe@example.com",
+		"role": "Admin",
+		"password": "secret"
+	},
+	{
+        "_id": "5d713a66ec8f2b88b8f830b8",
+		"firstname": "Jane",
+		"lastname": "Smith",
+		"email": "jane.smith@example.com",
+		"password": "secret"
+    }
+]

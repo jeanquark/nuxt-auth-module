@@ -1,0 +1,28 @@
+{
+    "name": "auth-module",
+    "version": "1.0.0",
+    "description": "My well-made Nuxt.js project",
+    "author": "jeanquark",
+    "private": true,
+    "scripts": {
+        "dev": "nodemon --watch api --exec \"nuxt\"",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/auth": "^4.8.5",
+        "@nuxtjs/axios": "^5.9.3",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "colors": "^1.4.0",
+        "cookie-parser": "^1.4.4",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.7.5",
+        "nuxt": "^2.0.0"
+    },
+    "devDependencies": {
+        "@nuxtjs/dotenv": "^1.4.1",
+        "nodemon": "^2.0.2"
+    }
+}
