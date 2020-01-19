@@ -6,11 +6,13 @@ const ErrorResponse = require('../utils/errorResponse')
 
 const router = Router()
 
+
 router.get(
     '/:id',
     asyncHandler(async (req, res, next) => {
         console.log('Call to api/users/:id route')
-
+        console.log('req.params.id: ', req.params.id)
+        console.log('req.headers.authorization: ', req.headers.authorization)
 		const user = await User.findById(req.params.id)
 		console.log('user: ', user)
 

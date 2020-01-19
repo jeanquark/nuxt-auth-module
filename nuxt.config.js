@@ -71,7 +71,12 @@ export default {
 		}
 		// watchLoggedIn: false
     },
-    serverMiddleware: ['~/api'],
+    axios: {
+        proxyHeaders: false
+	},
+    serverMiddleware: [
+        '~/api',
+    ],
     /*
      ** Build configuration
      */

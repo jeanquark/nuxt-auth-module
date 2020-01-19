@@ -29,8 +29,8 @@ module.exports = {
         const resumes = []
 
         for (let i = 0; i < total; i++) {
-            const totalEducations = faker.random.number({ min: 0, max: 3 })
-            const totalWorkExperience = faker.random.number({ min: 0, max: 3 })
+            const totalEducations = faker.random.number({ min: 0, max: 5 })
+            const totalWorkExperience = faker.random.number({ min: 0, max: 5 })
 
             const educations = []
             for (let i = 0; i < totalEducations; i++) {
