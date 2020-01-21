@@ -1,9 +1,10 @@
 const advancedResults = (model, populate) => async (req, res, next) => {
-	console.log('Call to advancedResults!')
+	console.log('Call to advancedResults! ', populate)
     let query
 
     // Copy req.query
     const reqQuery = { ...req.query }
+    console.log('reqQuery: ', reqQuery)
 
     // Fields to exclude
     const removeFields = ['select', 'sort', 'page', 'limit']
@@ -45,7 +46,10 @@ const advancedResults = (model, populate) => async (req, res, next) => {
 
     if (populate) {
         query = query.populate(populate)
+        // query = query.populate({ path: '/?active=true', select: 'job_title' })
+        // query = query.populate('job_title')
     }
+    // console.log('query: ', query)
 
     // Executing query
     const results = await query

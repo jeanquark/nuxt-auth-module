@@ -17,7 +17,8 @@ export const mutations = {
 export const actions = {
     async fetchResumes ({ commit }) {
 		console.log('Call to fetchResumes')
-		const { data } = await this.$axios.$get('/api/resumes')
+		// const { data } = await this.$axios.$get('/api/resumes?active=true')
+		const { data } = await this.$axios.$get('/api/resumes?active=true&select=username,job_title,job_description,active')
 		console.log('data: ', data)
 		commit('SET_RESUMES', data)
     },
