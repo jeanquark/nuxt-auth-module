@@ -70,7 +70,7 @@ module.exports = {
 
             resumes.push({
                 user_id: faker.random.uuid(),
-                username: faker.random.uuid(),
+                slug: faker.random.uuid(),
                 job_title: faker.name.jobTitle(),
                 job_description: faker.lorem.sentences(),
                 active: faker.random.boolean(),

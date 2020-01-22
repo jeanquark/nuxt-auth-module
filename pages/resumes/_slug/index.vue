@@ -9,9 +9,9 @@
 <script>
 export default {
     created () {
-        const resumeUsername = this.$route.params
-        console.log('resumeUsername: ', resumeUsername)
-        this.$store.dispatch('resumes/fetchResume', resumeUsername)
+        const resumeSlug = this.$route.params
+        console.log('resumeSlug: ', resumeSlug)
+        this.$store.dispatch('resumes/fetchResumeBySlug', { resumeSlug })
     },
     data () {
         return {

@@ -21,13 +21,14 @@ exports.getResumes = asyncHandler(async (req, res, next) => {
 // @route     GET /api/v1/resume/:id
 // @access    Public
 exports.getResume = asyncHandler(async (req, res, next) => {
-	console.log('Call to getResume controller: ', req.params.username)
+	console.log('Call to getResume controller: ', req.params.id)
     // const resume = await Resume.findOne({ username: '8231144c-af70-4e57-849c-a5ecb5f82a83' })
-    const resume = await Resume.findOne({ username: req.params.username })
+    // const resume = await Resume.findOne({ username: req.params.id })
+    const resume = await Resume.findById(req.params.id)
     console.log('resume: ', resume)
 
     if (!resume) {
-        return next(new ErrorResponse(`Resume not found with username of ${req.params.username}`, 404))
+        return next(new ErrorResponse(`Resume not found with id of ${req.params.id}`, 404))
     }
 
     res.status(200).json({ success: true, data: resume })

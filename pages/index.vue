@@ -38,7 +38,7 @@
         <div v-for="resume in resumes" :key="resume._id" style="border: 1px solid orange; width: 200px; margin: 10px; padding: 10px; display: inline-block;">
             <h3>{{ resume.job_title }}</h3>
             <p>{{ resume.job_description }}</p>
-            <nuxt-link :to="`/resumes/${resume.username}`">{{ resume.username }}</nuxt-link>
+            <nuxt-link :to="`/resumes/${resume.slug}`">{{ resume.slug }}</nuxt-link>
         </div>
     </div>
 </template>
@@ -80,7 +80,7 @@ export default {
             try {
                 const data = await this.$auth.loginWith('resume', {
                     data: {
-                        username: '7a2a37a0-dc7c-4eda-b81c-5dd38f4d9ef6',
+                        username: '5f10d277-b5db-4d4a-9a9d-24f184960940',
                         password: 'secret'
                     }
                 })

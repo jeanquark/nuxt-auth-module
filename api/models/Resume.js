@@ -3,14 +3,14 @@ const bcrypt = require('bcryptjs')
 
 const ResumeSchema = new mongoose.Schema(
     {
-        username: {
+        slug: {
             type: String,
-            required: [true, 'Please add a username'],
+            required: [true, 'Please add a unique identifier'],
 			trim: true,
-			unique: true,
+            unique: [true, 'Resume identifier must be globally unique'],
+            min: [2, 'Resume unique identifier can not be less than 2 characters'],
             maxlength: [50, 'Resume unique identifier can not be more than 50 characters']
         },
-        slug: String,
         active: Boolean,
         job_title: String,
         job_description: String,

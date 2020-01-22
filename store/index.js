@@ -35,10 +35,10 @@ export const actions = {
         }
 
         if (this.$auth.getToken('resume')) {
-            const decoded = jwt.verify(this.$auth.getToken('resume').split(' ')[1], process.env.JWT_SECRET)
+            const decoded = jwt.verify(this.$auth.getToken('resume').split(' ')[1], process.env.JWT_RESUME_SECRET)
             const resumeId = decoded.resume_id
             console.log('resumeId: ', resumeId)
-            if (resmeId) {
+            if (resumeId) {
                 const abc = await dispatch('resumes/fetchResume', resumeId)
                 console.log('abc: ', abc)
 

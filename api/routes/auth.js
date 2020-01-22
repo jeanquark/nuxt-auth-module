@@ -133,6 +133,7 @@ router.post('/login-resume', async (req, res, next) => {
         const { username, password } = req.body
 
         // Check if resume exists
+        // const resume = await Resume.findOne({ username })
         const resume = await Resume.findOne({ username }).select('+password')
         console.log('resume: ', resume)
 
@@ -156,7 +157,7 @@ router.post('/login-resume', async (req, res, next) => {
                 resume_id: resume._id,
                 scope: ['test', 'user']
             },
-            process.env.JWT_SECRET
+            process.env.JWT_RESUME_SECRET
         )
 
         res.json({

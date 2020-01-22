@@ -25,9 +25,12 @@
 					break
 				case 'resume':
 					token = window.localStorage.getItem('auth._token.resume')
-					decoded = jwt.verify(token.split(' ')[1], process.env.JWT_SECRET)
+					decoded = jwt.verify(token.split(' ')[1], process.env.JWT_RESUME_SECRET)
+					console.log('decoded: ', decoded)
+					const token2 = this.$auth.getToken('resume').split(' ')[1]
+					console.log('token2: ', token2)
 					const resumeId = decoded.resume_id
-					const def = await this.$store.dispatch('resumes/fetchResume', resumeId)
+					const def = await this.$store.dispatch('resumes/fetchResume', { resumeId })
 					console.log('def: ', def)
 					break
 				default:
